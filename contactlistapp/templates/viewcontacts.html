@@ -1,0 +1,12 @@
+<a href="{% url 'allContacts' %}"><button>Back</button></a>
+
+{% for contact in contacts%}
+    <p>{{contact.firstName}}</p>
+    <p>{{contact.lastName}}</p>
+    <p>{{contact.company}}</p>
+    <p>{{contact.phoneNumber}}</p>
+    <p>{{contact.emailAddress}}</p>
+    <p>{{contact.address}}</p>
+    <a href = "{% url 'updateContact' contact.id %}"><button>Update</button></a>
+    <a href = "{% url 'deleteContact' contact.id %}"><button>Delete</button></a>
+{% endfor %}

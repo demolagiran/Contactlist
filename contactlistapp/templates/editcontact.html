@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div>
+            <form method="POST">
+                {% csrf_token %}
+                <div class="infotext"> Enter details:</div>
+                <div id='bckclr'>
+                    <label>First Name:</label>
+                    {{updateform.firstName}}
+                </div>
+                <div id='bckclr'>
+                <label>Last Name:</label>
+                {{updateform.lastName}}
+                </div>
+                <div id='bckclr'>
+                <label>Company Name:</label>
+                {{updateform.company}}
+                </div>
+                <div>
+                <label>Phone number:</label>
+                {{updateform.phoneNumber}}
+                </div>
+                <div>
+                    <label>Email Address:</label>
+                    {{updateform.emailAddress}}
+                </div>
+                <div>
+                    <label>Home Address:</label>
+                    {{updateform.address}}
+                </div>
+                <div><button type="submit">Update Contact</button></div>
+            </form>
+
+        </div>
+    </div>
+    
+</body>
+</html>

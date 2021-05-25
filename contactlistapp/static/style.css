@@ -1,0 +1,10 @@
+.infotext {
+    color: aqua;
+    
+}
+#bckclr {
+    background-color: blue;
+    display: inline-flex;
+    padding: 10px 10px 10px 10px ;
+    
+}
